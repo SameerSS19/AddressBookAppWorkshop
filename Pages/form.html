@@ -10,11 +10,22 @@
     <body>
         <!--UC 1-->
         <header class="header-content header">
-        <div class="logo-content">
-            <img src="../Asserts/logo.png" alt="" width="5%">
-            <span class = "addbook-text">ADDRESS</span><br>
-            <span class ="addbook-text address-book">BOOK</span>
-        </div>
+            <div class="logo-content">
+                <img src="../Asserts/logo.png" alt="" width="5%">
+                <span class = "addbook-text">ADDRESS</span><br>
+                <span class ="addbook-text address-book">BOOK</span>
+            </div>
         </header>
+        
+        <!--UC 2-->
+        <div class="form-content">
+            <form class="form" action="#"  onreset="resetForm()" onsubmit="save();return false">
+                <div class ="form-head">
+                    <span class ="head">PERSON ADDRESS FORM</span>
+                    <img src="../Asserts/cross.png" alt="" width="4%" class="cross" style="float: right" onclick="cancel()"> 
+                </div>
+            </form>
+        </div>
+        
     </body>
 </html>
