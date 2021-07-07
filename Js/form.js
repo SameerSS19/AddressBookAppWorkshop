@@ -79,4 +79,14 @@ const createAddressBook = ()=>{
     alert(addressBookData.toString());
     return addressBookData;
 }
+function createAndUpdateStorage (addressBookData){
+    let contactList = JSON.parse(localStorage.getItem("ContactList"));
+    if(contactList!=undefined){
+        contactList.push(addressBookData);
+    }else{
+        contactList=[addressBookData];
+    }
+    alert(contactList.toString());
+    localStorage.setItem("ContactList",JSON.stringify(contactList));
+}
     
