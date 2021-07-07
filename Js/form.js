@@ -47,7 +47,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
     
 //on submit
-
 const save = () => {
     try{
         let addressBookData = createAddressBook();
