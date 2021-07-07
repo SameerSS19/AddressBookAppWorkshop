@@ -37,13 +37,6 @@
                 </div>
               
                 <div class = "phone-content">
-                    <label class="label text" for="phone">Phone Number</label>
-                    <input class="input" type="text" id="phone" name="phone"
-                        required> 
-                        <error-output class="phone-error" for="text"></error-output>
-                </div>
-              
-                <div class = "phone-content">
                     <label class="label text" for="address">Address</label>
                     <input class="address" type="text" id="address" name="address"
                         required> 
@@ -111,8 +104,21 @@
                                 </label>
                             </div>
                 </div>
+                <div class = "phone-content">
+                    <label class="label text" for="phone">Phone Number</label>
+                    <input class="input" type="text" id="phone" name="phone"
+                        required> 
+                        <error-output class="phone-error" for="text"></error-output>
+                </div>
+                <!--UC 5-->
+                <div class="buttonParent">
+                      <div class="submit-reset">
+                          <button type="submit" class="submitButton button" id="submitButton">Add</button>
+                          <button type="reset" class="resetButton button">Reset</button>
+                      </div>
+                </div>
             </form>
-        </div>
+        </div>  
         
     </body>
 </html>
