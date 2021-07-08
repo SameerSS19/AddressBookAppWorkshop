@@ -14,15 +14,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
             }
         });
 
-        const phone = document.querySelector('#phone');
+        const phoneNumber = document.querySelector('#phoneNumber');
         const phoneError = document.querySelector('.phone-error');
         name.addEventListener('input',function () {
-                if (phone.value.length == 0) {
+                if (phoneNumber.value.length == 0) {
                     phoneError.textContent = "";
                     return;
                 }
                 try {
-                    (new AddressBook()).phoneNumber = phone.value;
+                    (new AddressBook()).phoneNumber = phoneNumber.value;
                     phoneError.textContent = "";
                 } catch (e) {
                     phoneError.textContent = e;
