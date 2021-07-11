@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book App</title>
+    <link rel="stylesheet" href="../css/addressBookForm.css">
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/images/addressbook.jpeg" alt="">
+            <div>
+                <span class="add-text">ADDRESS</span><br>
+                <span class="add-text address-book">BOOK</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="formId" class="form-content">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="saveForm(event)">
+            <div class="address-header">
+                <div class="address-header-content">Person Address Form</div>
+                <a href="../pages/home.html"><img class="cancel-button" src="../assets/images/cancel.jpeg"></a>
+            </div>
+
+            <br><br>
+            <div class="row-content">
+                <label class="label text" for="name">Full Name</label>
+                <input class="input" type="text" name="name" id="name" placeholder="Enter your full name here " required>
+                <error-output class="name-error" for="name"></error-output>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="number">Mobile Number</label>
+                <input class="input" type="text" name="mobile" id="mobile" placeholder="Enter your mobile Number here " required>
+                <error-output class="mobile-error" for="mobile"></error-output>
+            </div>
+            <div class="row-content address-label">
+                <label class="label text" for="address">Address</label>
+                <textarea class="input address-text" type="text" name="address" id="address" placeholder="Enter your address here" required ></textarea>
+                <error-output class="address-error" for="address"></error-output>
+            </div>
+            <div class="row-content-exp">
+                <div class="oneRow-content">
+                <label class="label text" for="city">City</label>
+                <select class="select-input" id="city" name="city" required>
+                  <option value="" selected disabled hidden>Select City</option>
+                  <option value="Amroha">Ambala</option>
+                  <option value="Bangalore">Bangalore</option>
+                  <option value="Bhopal">Bhopal</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Ghaziabad">Ghaziabad</option>
+                  <option value="Gurgaon">Gurgaon</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Indore">Indore</option>
+                  <option value="Jaipur">Jaipur</option>
+                  <option value="Kolkata">Kolkata</option>
+                  <option value="Lucknow">Lucknow</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Noida">Noida</option>
+                  <option value="Patna">Patna</option>
+                  <option value="Pune">Pune</option>
+                  <option value="Rohtak">Rohtak</option>
+                </select>
+              </div>
+              <div class="oneRow-content">
+                <label class="label text" for="state">State</label>
+                <select class="select-input" id="state" name="state" required>
+                  <option value="" selected disabled hidden>Select State</option>
+                  <option value="Select State" disabled selected>Select State</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chhattisgadh">Chhattisgadh</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                </select>
+              </div>
+              <div class="oneRow-content">
+                <label class="label text" for="zip">Zip</label>
+                <input class="input" type="text" name="zip" id="zip" required>
+              </div>
+            </div>
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" id="submitButton">Add</button>
+                    <button type="button" onclick="resetForm()" class="resetButton button">Reset</button>
+                </div>
+        </form>
+        <script src="../js/addreessBookForm.js"></script>
+        <script src="../js/AddressBook.js"></script>
+        <script src="../js/siteProperties.js"></script>
+    </div>
+</body>
+</html>
